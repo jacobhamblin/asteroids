@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <script src="lib/movingObject.js"></script>
     <script src="lib/utils.js"></script>
     <script src="lib/asteroid.js"></script>
@@ -9,15 +10,25 @@
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
     <script src="keymaster.js"></script>
+    <script src="jquery-1.11.2.min.js"></script>
   </head>
   <body>
-    <canvas id="game-canvas" width="1000" height="500">
+    <canvas id="game-canvas">
 
     <script>
       var canvas = document.getElementById('game-canvas');
       var ctx = canvas.getContext('2d');
       var game = new Asteroids.Game();
-      var gameView = new Asteroids.GameView(game, ctx);
+
+      var img = new Image();
+      img.onload = function () {
+        ctx.drawImage(img, 0, 0);
+      };
+      img.src = 'https://s3-us-west-1.amazonaws.com/yasmirtudoachimandirochichi/asteroids/OS-X-Mountain-Lion-Milky-Way.jpg';
+      img.width = window.innerWidth * 0.9;
+      img.height = window.innerHeight * 0.9;
+
+      var gameView = new Asteroids.GameView(game, ctx, img);
       gameView.start();
     </script>
 
