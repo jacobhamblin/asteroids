@@ -12,20 +12,17 @@ body {
 }
 
 a {
-  width: 50px;
-  margin-right: auto;
-  margin-left: auto;
   position: absolute;
   text-decoration: none;
-  color: #ddd;
+  color: #888;
 }
 
 a:visited {
   text-decoration: none;
-  color: #ddd;
+  color: #888;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ddd;
+  color: #888;
 }
