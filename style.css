@@ -1,8 +1,8 @@
 #game-canvas {
-  border: 10px solid #bbb;
+  border: 1px solid #232323;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('https://s3-us-west-1.amazonaws.com/yasmirtudoachimandirochichi/asteroids/OS-X-Mountain-Lion-Milky-Way.jpg');
+  background-image: url('./lib/bg.png');
 }
 
 body {
