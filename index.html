@@ -19,16 +19,7 @@
       var canvas = document.getElementById('game-canvas');
       var ctx = canvas.getContext('2d');
       var game = new Asteroids.Game();
-
-      var img = new Image();
-      img.onload = function () {
-        ctx.drawImage(img, 0, 0);
-      };
-      img.src = 'https://s3-us-west-1.amazonaws.com/yasmirtudoachimandirochichi/asteroids/OS-X-Mountain-Lion-Milky-Way.jpg';
-      img.width = window.innerWidth * 0.9;
-      img.height = window.innerHeight * 0.9;
-
-      var gameView = new Asteroids.GameView(game, ctx, img);
+      var gameView = new Asteroids.GameView(game, ctx);
       gameView.start();
     </script>
 
