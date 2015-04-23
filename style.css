@@ -10,3 +10,22 @@ body {
   height: 100%;
   margin: 0px;
 }
+
+a {
+  width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  text-decoration: none;
+  color: #ddd;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ddd;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ddd;
+}
