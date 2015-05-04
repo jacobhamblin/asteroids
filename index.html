@@ -17,6 +17,13 @@
     <br><br><a href='http://jacobhamblin.github.io/jsGames'>back</a><br><br><br>
     <canvas id="game-canvas">
 
+    <script>
+      window.audio = new Audio('https://s3-us-west-1.amazonaws.com/yasmirtudoachimandirochichi/asteroids/MMIII+-+10+-+Dust+Man+Stage.mp3');
+      window.audio.addEventListener('ended', function() {
+        this.play();
+      }, false);
+      audio.play();
+    </script>
 
     <script>
       var canvas = document.getElementById('game-canvas');
