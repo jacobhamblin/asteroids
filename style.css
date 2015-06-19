@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   background-image: url('./lib/bg.jpg');
+  -webkit-filter: grayscale(100%);
 }
 
 body {
